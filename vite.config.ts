@@ -7,7 +7,7 @@ export default defineConfig({
   server: { port: 4000 },
   plugins: [
     react({
-      reactRefreshHost:'http://localhost:5173' // TO make HMR works on host when changes are made in remote app
+      reactRefreshHost:'http://localhost:5173' // point to host port to make HMR works when changes are made in remote app
     }),
     federation({
       dts: true,
